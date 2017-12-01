@@ -34,10 +34,10 @@ public class Processor {
                 out.write(person.getName());
                 out.write("</td>");
                 out.write(td);
-                out.write(person.getAddress());
+                out.write(person.getpNumber());
                 out.write("</td>");
                 out.write(td);
-                out.write(person.getpNumber());
+                out.write(person.getAddress());
                 out.write("</td>");
                 out.write("</tr>");
             }
