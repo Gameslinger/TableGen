@@ -25,12 +25,15 @@ public class CSVProccessor {
         } else if(args[0].equalsIgnoreCase("process")){
             System.out.println("Processing \""+args[1]+"\" styled by \""+args[2]+"\" to \""+args[3]+"\"");
             Processor.process(args[1], args[2],args[3]);
+        }else if(args[0].equalsIgnoreCase("genSpec")){
+            SpecWriter.writeDefault(args[1]);
         }
         System.out.println("Finished");
     }else{
             System.out.println("Improper usage!\n"
-                    + "Try: generate [num] output\n"
-                    + "or: process input specs output");
+                    + "ex: generate [num] output\n"
+                    + "ex: process input specs output"
+                    + "ex: genSpec output");
         }
     }
 
